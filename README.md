@@ -117,6 +117,10 @@ Then try them through Claude:
 
 For problems specific to STL rebuilding, see the [stl-to-openscad README](stl-to-openscad/README.md#troubleshooting).
 
+## How it compares
+
+Most STL-to-OpenSCAD converters (such as [raviriley/STL-to-OpenSCAD-Converter](https://github.com/raviriley/STL-to-OpenSCAD-Converter)) copy the mesh into one `polyhedron()`. That's exact, but you can't edit it. `stl-to-openscad` instead rebuilds the part from named parameters and checks it against the original. [COMPARISONS.md](COMPARISONS.md) compares it with the other tools: converters that copy the mesh, other LLM skills that rebuild parts, and CAD mesh-to-solid tools (Fusion 360, FreeCAD, Geomagic).
+
 ## Credits and license
 
 MIT, see [LICENSE](LICENSE).
