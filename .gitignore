@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# test output from the README's install check
+test_part*
